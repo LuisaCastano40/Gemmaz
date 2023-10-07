@@ -1,0 +1,353 @@
+/* Importamos las fuentes */
+@font-face {
+    font-family: 'CatchyMager-normal';
+    src: url('/fonts/CatchyMager-Normal.ttf');
+}
+@font-face {
+    font-family: 'SegoeUI-normal';
+    src: url('/fonts/SegoeUI-Normal.TTF');
+}
+
+/* variables de css */
+:root{
+    --titleText: 'CatchyMager-normal';
+    --contentText: 'SegoeUI-normal';
+    --colorFondo1:#C098D8;
+    --colorFondo2:#140945;
+    --colorFondo3:#55AEE1;
+    --colorTexto:#140945;
+    --opacidad1:#beabecbf;
+    --opacidadWpp:#ffffff3b;
+    --opacidadText:#ffffff54;
+    --terciario:#30205D;
+}
+
+/* condiciones iniciales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    color: var(--colorTexto);
+    font-family: var(--titleText);
+}
+
+/* --------------HEADER--------------- */
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* menú de navegación */
+.container-navBar{
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.navBar-list{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.navBar-list a{
+ text-decoration: none;
+ color: var(--colorTexto);
+}
+.navBar-list img{
+    height: 80px;
+}
+
+/* banner */
+.container-slider{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/banner/banner-bg.png');
+    background-position: bottom;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+
+/* -----------------MAIN---------------- */
+.container-sobreGemmaz{
+    width: 100%;
+    height: 60vh;
+    background-color: var(--colorFondo1);
+    padding: 8% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container-deco{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -80%;
+    left: 0;
+    background-image: url('/assets/banner/banenr-deco.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.container-content{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.content-gemmaz{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+.content-gemmaz h1{
+    font-size: 35px;
+}
+.content-gemmaz span{
+    color: white;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+.content-gemmaz p{
+    font-family: var(--contentText);
+    color: 25px;
+}
+.content-gemmaz img{
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+}
+.ilustration1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ilustration1 img{
+    width: 100%;
+}
+
+.container-products{
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(0deg, rgba(20,9,69,1) 4%, rgba(192,152,216,1) 100%);
+}
+.container-products h2{
+    width: 60%;
+    margin: 20px auto;
+    font-size: 35px;
+}
+.products-content{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    gap: 20px;
+}
+.categories{
+    width: 30%;
+}
+.categories ul{
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.categories li{
+    margin: 7px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.categories li:hover{
+    border-radius: 15px;
+    background-color: var(--opacidadText);
+}
+.products{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.product{
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(62%) contrast(113%) grayscale(16%) opacity(76%) saturate(124%) sepia(25%);
+}
+.content-shoppingBag{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: var(--opacidad1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.content-shoppingBag img{
+    width: 50%;
+    height: 50%;
+}
+.content-shoppingBag:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.pagination{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: white; 
+}
+.pagination li{
+    padding: 3px 5px;
+}
+.pagination li:hover{
+    color: var(--colorTexto);
+    cursor: pointer;
+    background-color: var(--opacidadText);
+    border-radius: 5px;
+    
+}
+
+/* Whatsaap fijo */
+.fixed-whatsapp{
+    background: var(--opacidadWpp);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    border-radius: 5px 0px 0 5px;
+}
+.fixed-whatsapp a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fixed-whatsapp img{
+    width: 80%;
+}
+/* ----------------FOOTER----------- */
+footer{
+    background: linear-gradient(0deg, rgba(85,174,225,1) 4%, rgba(20,9,69,1) 100%);
+    overflow: hidden;
+}
+.container-sobreMi{
+    color: white;
+    width: 60%;
+    padding: 80px 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+}
+.content-emma{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.content-emma h1{
+    margin: 0;
+    width: 100%;
+    font-size: 35px;
+}
+.content-emma span{
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+.content-emma p{
+    text-align: justify;
+    font-family: var(--contentText);
+    
+}
+.redes{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.redes p,
+.redes a{
+    font-family: var(--contentText);
+    color: white;
+    padding: 5px 20px;
+}
+.redes a{
+    background-color: var(--opacidadText);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.socialMedia{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.socialMedia img{
+    width: 50px;
+}
+.ilustration2{
+    border: solid red;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.ilustration2 img{
+    width: 100%;
+}
+.footer-deco{
+    position: absolute;
+    bottom: -10%;
+    right: 20%;
+    width: 50%;
+}
