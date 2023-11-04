@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 2163.1 2742.3" style="enable-background:new 0 0 2163.1 2742.3;" xml:space="preserve">
+	 viewBox="0 0 1620 1135" style="enable-background:new 0 0 1620 1135;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:url(#SVGID_1_);}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#C098D8;}
+	.st4{fill:url(#SVGID_1_);}
 </style>
-<image style="overflow:visible;" width="5067" height="4475" xlink:href="libreta edi.png"  transform="matrix(0.3867 0 0 0.3867 134.8261 225.4783)">
+<image style="overflow:visible;" width="5067" height="4475" xlink:href="../libreta edi.png"  transform="matrix(0.3224 0 0 0.3224 -5.1663 -77.6694)">
 </image>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1113.826" y1="2915.4783" x2="1113.826" y2="384.4783">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="811.032" y1="2165" x2="811.032" y2="54.8899">
 	<stop  offset="0.2486" style="stop-color:#120743;stop-opacity:0"/>
 	<stop  offset="0.5615" style="stop-color:#120743"/>
 	<stop  offset="0.8951" style="stop-color:#3E083C;stop-opacity:0.2232"/>
 	<stop  offset="0.9909" style="stop-color:#4C083A;stop-opacity:0"/>
 </linearGradient>
-<rect x="133.8" y="384.5" class="st0" width="1960" height="2531"/>
+<rect x="-6" y="54.9" class="st4" width="1634.1" height="2110.1"/>
 </svg>
